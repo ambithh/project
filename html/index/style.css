@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  text-align: center;
+}
+
+header {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.menu {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+section {
+  padding: 20px;
+}
+
+.card {
+  background: #f4f4f4;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card:hover {
+  background: lightgray;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.profile-photo {
+  width: 80px;      
+  height: 80px;     
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+@media (max-width: 480px) {
+  .profile-photo {
+    width: 80px;
+    height: 80px;
+}
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 150px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu {
+    display: block;
+  }
+}
